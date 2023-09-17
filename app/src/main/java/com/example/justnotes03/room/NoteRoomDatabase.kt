@@ -11,7 +11,7 @@ abstract class NoteRoomDatabase : RoomDatabase() {
 
     companion object {
         @Volatile
-        private var database: RoomDatabase? = null
+        private var database: NoteRoomDatabase? = null
 
         @Synchronized
         fun getInstance(context: Context): NoteRoomDatabase {

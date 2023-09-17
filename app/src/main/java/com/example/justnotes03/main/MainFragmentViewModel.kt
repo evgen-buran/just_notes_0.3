@@ -12,7 +12,7 @@ import com.example.justnotes03.utils.REPOSITORY
 
 class MainFragmentViewModel(application: Application) : AndroidViewModel(application) {
     private val context: Context = application
-    lateinit var  liveData: LiveData<List<AppNote>>
+    lateinit var liveData: LiveData<List<AppNote>>
 
     fun initDatabase() {
         val daoNotes = NoteRoomDatabase.getInstance(context).getDao()
